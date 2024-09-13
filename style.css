@@ -1,0 +1,262 @@
+html, body {
+    font-family: Arial;
+    margin: 0;
+    height: 100%;
+}
+
+.content-grid {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 14% 80% 6%;
+}
+
+.content-item {
+    outline-color: black;
+    outline-style: solid;
+    outline-width: 1px;
+}
+.top-grid {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 25% 20% 35% 20%;
+    grid-template-rows: 100%;
+    background: rgb(63 63 63);
+}
+
+.middle-grid {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 100%;
+}
+
+.output-grid {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 90% 10%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: revert;
+}
+
+.infomation-label{
+    color: rgb(155, 155, 155);
+    margin-top: 2px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+
+}
+
+.top-infomation {
+    padding: 0px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 5px;
+    color: rgba(255, 255, 255, 1);
+    
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-gap: 0px;
+    align-items: stretch;
+    height: 100%;
+}
+
+.button-item {
+    color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    background: rgba(21, 41, 26, 1);
+    font-size: 17px;
+    text-align: center;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    height: 100%;
+}
+
+.button-item:hover {
+    background-color: #04AA6D;
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    font-size: 17px;
+    text-align: center;
+}
+
+textarea {
+    width: 100%;
+    height: 95%;
+    padding: 0px;
+    resize: none;
+    font-size: 14px;
+    font-family: sans-serif;
+    background-color: rgb(33 33 33);
+    border-color: rgb(21 41 26);
+    border-width: 0px;
+    color: white;
+    outline: none
+}
+
+.inputbox {
+    color: white;
+    background-color: black;
+    width: 90%;
+    height: 100%;
+    padding: 0px;
+    border: none;
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+header {
+    
+}
+
+.top-grid-container {
+    display: grid;
+    grid-template-columns: 25% 15% 40% 20%;
+}
+
+.bottom-grid-container {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 80% 20%;
+    height: 100vh;
+}
+
+
+.button-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-gap: 4px;
+    align-items: stretch;
+    height: 94%;
+}
+
+.grid-item {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    background: rgba(40,40,40,1);
+    padding: 3px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.output-grid-item {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    background: rgba(40,40,40,1);
+    padding: 3px;
+    font-size: 20px;
+    text-align: left;
+    height: auto;
+}
+
+.inventory-grid-item {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    background: rgba(40,40,40,1);
+    padding: 3px;
+    font-size: 20px;
+    text-align: left;
+    height: auto;
+}
+
+.button-item {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    background: rgba(21, 41, 26, 1);
+    font-size: 17px;
+    text-align: center;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    height: 100%;
+}
+
+.button-item:hover {
+    background-color: #04AA6D;
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    font-size: 17px;
+    text-align: center;
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.infomation-title {
+    color: rgb(229 255 0);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    background: rgba(40,40,40,1);
+    padding: 3px;
+    font-size: 20px;
+    text-align: left;
+    font-weight: bold;
+    
+}
+.top-infomation {
+    padding: 0px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: lighter;
+}
+
+textarea {
+    width: 98.6%;
+    height: 80%;
+    padding: 6px;
+    resize: none;
+    font-size: 14px;
+    font-family: sans-serif;
+    background-color: rgba(40,40,40,1);
+    border-color: rgb(21 41 26);
+    border-width: 3px;
+    color: white;
+    outline: none
+}
+*/

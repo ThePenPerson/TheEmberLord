@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="code.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>The Ember Lord</title>
+</head>
+<body>
+    <div class="content-grid">
+
+        <div class="top-grid">
+            <div class="content-item">
+                <!-- changes the image based on the width -->
+                <picture>
+                    <source media="(min-width: 450px)"
+                            srcset="assets/images/desktop_logo.png">
+                    <source media="(min-width: 100px)"
+                            srcset="assets/images/mobile_logo.png">
+                    <img src="images/kitten-curled.png"
+                         alt="a cute kitten">
+                </picture>
+            </div>
+            <div class="content-item">
+                <h4 class="infomation-label">Time/Date:</h4>
+                <p id="time" class="top-infomation"></p>
+                <p id="date" class="top-infomation"></p>
+            </div>
+            <div class="content-item">
+                <h4 class="infomation-label">Tasks:</h4>
+                <p id="task" class="top-infomation"></p>
+
+            </div>
+            <div class="content-item">
+                <div class="button-container">
+                    <button class="button-item" type="button">Export Save</button>
+                    <button class="button-item" type="button">Load Save</button>
+                    <button class="button-item" type="button">Help</button>
+                    <button class="button-item" type="button">Quit</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="middle-grid">
+            <div class="content-item">
+
+                <textarea readonly>The game output goes here!</textarea>
+                <div class="input-area">
+                    <label for="inputbox">Area</label>
+                    <input class="inputbox" type="text" id="inputbox" name="input"><br><br>
+                </div>
+                
+
+            </div>
+            <div class="content-item">
+                <progress id="file" value="32" max="100"> 32% </progress>
+                <progress id="file" value="32" max="100"> 32% </progress>
+                <progress id="file" value="32" max="100"> 32% </progress>
+            </div>
+        </div>
+
+        <div class="content-item">
+            Created By Wok Software
+        </div>
+
+    </div>
+    <script src="code.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="code.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Cool game</title>
+</head>
+<body>
+    <header>
+        <div class="top-grid-container">
+            <div class="grid-item">
+                <img src="assets\images\bitmap.png" alt="Italian Trulli">
+            </div>
+            <div class="infomation-title">
+                Time and Date:
+                <p id="time" class="top-infomation"></p>
+                <p id="date" class="top-infomation"></p>
+
+            </div>
+            <div class="infomation-title">
+                Tasks:
+                <p id="task" class="top-infomation"></p>
+
+            </div>
+            <div class="grid-item">
+                <div class="button-container">
+                    <button class="button-item" type="button">Export Save</button>
+                    <button class="button-item" type="button">Load Save</button>
+                    <button class="button-item" type="button">Help</button>
+                    <button class="button-item" type="button">Quit</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="bottom-grid-container">
+        <div class="output-grid-item">
+            <textarea readonly>The game output goes here!</textarea>
+        </div>
+        <div class="inventory-grid-item">
+            The inventory stuff will go over here
+        </div>
+    </div>
+
+
+
+    <script src="code.js"></script>
+</body>
+</html>
+-->
+
